@@ -1,0 +1,40 @@
+li.woo-cl-item {
+	position: relative;
+}
+
+
+li.woo-cl-item div.woo-cl-child {
+	display:none;
+}
+
+li.woo-cl-item:hover > div.woo-cl-child {
+	display:block;
+}
+
+li.woo-cl-item .woo-cl-child {
+	position:absolute;
+	top:100%;
+	right:0;
+	border: 1px solid #000000;/**/
+	background: #fff;/**/
+	padding: 1em;
+	z-index: 9999;/**/
+	width: 200px;
+}
+
+
+.woo-cl-item.logged-out .woo-cl-child {
+	width: 500px;
+}
+
+.woo-cl-item.logged-out .woo-cl-child .woo-cl-col {
+	width: 47%;
+	display: block;
+	float: left;
+}
+
+.woo-cl-item.logged-out .woo-cl-child .woo-cl-col.register {
+	padding-right:1em;
+	border-right: 1px solid #000000;
+	margin-right: 1em;
+}
